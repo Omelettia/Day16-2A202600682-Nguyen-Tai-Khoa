@@ -20,3 +20,10 @@ lab-key.pub
 # Environment Variables
 .env
 .env.local
+
+# AWS CLI installer artifacts
+awscliv2.zip
+aws/
+
+# Windows artifacts
+*:Zone.Identifier

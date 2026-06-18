@@ -206,7 +206,7 @@ resource "aws_iam_instance_profile" "ai_profile" {
 
 resource "aws_instance" "gpu_node" {
   ami                    = data.aws_ami.deep_learning.id
-  instance_type          = "g4dn.xlarge" 
+  instance_type          = "g5.xlarge" 
   subnet_id              = aws_subnet.private[0].id
   vpc_security_group_ids = [aws_security_group.gpu_sg.id]
   key_name               = aws_key_pair.lab_key.key_name
